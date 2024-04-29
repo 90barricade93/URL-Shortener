@@ -17,5 +17,5 @@ def about(): # We created a view function
     return render_template("about.html") # We returned a string
     
 if __name__ == "__main__": # We used this to run the Flask application only if the script is directly executed from the Python interpreter and not used as an imported module
-    app.run(debug=True) # We ran the Flask app in debug mode
+    app.run(debug=False) # We ran the Flask app in debug mode
     
