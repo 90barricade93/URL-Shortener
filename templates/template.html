@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flask Parent Template</title>
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/template.css') }}">
+    <link href="{{url_for('static',filename='css/main.css')}}" rel="stylesheet">
+</head>
+  <body style="background-image: url('{{ url_for('static', filename='images/background.jpg') }}');">
+    <header>
+      <div class="container">
+        <h1 class="logo">Doctor URL</h1>
+        <strong><nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('home') }}">Home</a></li> <!-- url_for is a function that takes the name of the function as an argument and returns the URL as a string -->
+            <li><a href="{{ url_for('about') }}">About</a></li>  <!-- url_for is a function that takes the name of the function as an argument and returns the URL as a string -->
+            <li><p>   </p></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+
+
+    
+{% block content %} <!-- content is a block that will be replaced by the content of the child template -->
+{% endblock %}
+
+{% block footer %} <!-- footer is a block that will be replaced by the content of the child template -->
+{% endblock %}
+
+
+
+<footer>
+  <div style="margin: 10px auto; text-align: center; display: flex; justify-content: center;">
+    <img src="static/images/_bcdb9774-1d59-4922-83fa-d94f37685d17.jpeg" alt="Doctor URL" style="width: 500px">
+  </div>
+  <div class="logo" style="text-align: center;">
+    <p>&copy; 2024. Raymond de Vries.</p>
+  </div>
+</footer>
+ </body>
+</html>

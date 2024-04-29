@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About Flask</title>
+  </head>
+  <body>
+    {% extends "template.html" %} <!-- template.html is the base template -->
+    {% block content %} <!-- content is the block name -->
+    
+    <h1 style="text-align: center;"> About DOCTOR URL </h1>
+    <div style="border: 3px solid gray; border-radius: 5px; max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; justify-content: center">
+      <p> 1. DOCTOR URL is a powerful URL shortener that uses Python, Flask, TailwindCSS, and Pyshortener.</p>
+      <p> 2. The platform provides a seamless and efficient solution for creating shortened URLs.</p>
+      <p> 3. DOCTOR URL stands out for its sleek design and easy navigation, thanks to the integration of Flask and TailwindCSS.</p>
+      <p> 4. With Pyshortener, users have full control over their shortened URLs, making DOCTOR URL a valuable tool in the digital landscape.</p>
+    </div>
+
+    {% endblock %} <!-- end of the block -->
+  </body>
+</html>
