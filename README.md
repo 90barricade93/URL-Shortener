@@ -14,6 +14,10 @@
 ---
 Lorem ...
 
+### Live demo
+
+https://raymonddevries.eu.pythonanywhere.com/
+
 <div align="center">
 
 ![GitHub forks](https://img.shields.io/github/forks/90barricade93/URL-Shortener) &ensp; © Raymond de Vries &ensp; ![GitHub stars](https://img.shields.io/github/stars/90barricade93/URL-Shortener) 
